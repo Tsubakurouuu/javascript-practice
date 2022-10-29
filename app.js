@@ -1,8 +1,17 @@
-let i;
-let num = 0;
+// varによる再宣言
+var nickname = "taro"
+console.log(nickname)
+var nickname = "ichiro"
+console.log(nickname)
 
-for(i = 1; i < 11; i++){
-  num = num + i;
-}
+// letによる再宣言
+let nickname = "taro"
+console.log(nickname)
+let nickname = "ichiro"
+console.log(nickname)
 
-alert('1から10まで足し算した結果は' + num + 'です');
+// constによる再宣言
+const nickname = "taro"
+console.log(nickname)
+const nickname = "ichiro"
+console.log(nickname)
