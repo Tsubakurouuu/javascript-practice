@@ -9,3 +9,5 @@ alert(2 * 6);
 
 // 割り算
 alert(10 / 2);
+
+alert('Hello' + 'World');
