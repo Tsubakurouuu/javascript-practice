@@ -1,17 +1,10 @@
-// varによる再代入
-var nickname = "taro"
-console.log(nickname)
-nickname = "jiro"
-console.log(nickname)
+var str = "webcamp" //グローバルスコープ
 
-// letによる再代入
-let nickname = "taro"
-console.log(nickname)
-nickname = "jiro"
-console.log(nickname)
+function foo() {
+  console.log(str)
+  var y = "hello" //関数スコープ
+}
 
-// constによる再代入
-const nickname = "taro"
-console.log(nickname)
-nickname = "ichiro"
-console.log(nickname)
+foo()
+console.log(y)
+
