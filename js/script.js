@@ -6,6 +6,10 @@ $(function(){
     $.ajax({
       url: "https://api.openweathermap.org/data/2.5/weather?q=" + $('#cityname').val() + "&units=metric&appid=" + API_KEY,
       dataType: 'jsonp',
+    }).done(function(data){
+      // 通信成功
+    }).fall(function(data){
+      // 通信失敗
     })
   });
 });
